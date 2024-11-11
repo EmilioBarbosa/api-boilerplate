@@ -1,9 +1,9 @@
-import z from "zod";
+import z from 'zod';
 
 const envSchema = z.object({
-    APP_PORT: z.string()
-})
+  APP_PORT: z.string(),
+});
 
-const env = envSchema.parse(process.env)
+const env = envSchema.parse(process.env);
 
-export default env
+export default env;
